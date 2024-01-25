@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive card slider</title>
+    <!-- link the css file  -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- <style>
+    *{
+        /* padding-top: 56px; ; Adjust this value based on your header height  */
+        /* padding-bottom: 56px;  Adjust this value based on your footer height  */
+        margin: 0px;
+        padding: 0px;     
+        
+    }
+  /* .item  { */
+    /* width: 50%; */
+    /* margin: auto; */
+  /* } */
+  </style> -->
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+        header{
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(10, 92, 71);
+            color: white;
+            padding: 20px;
+            font-family: Arial;
+            height: 70px;
+        }
+        header div {
+            margin: 10px, 20px;
+            text-decoration: none;
+        }
+        /* .sh {
+             padding:30px;
+            color: black;
+            background-color: hsl(0, 11%, 79%);
+          
+            
+        } */
+        .container-1{
+          height: 50%;
+        }
+        .container-2{
+          height: 70%;
+        }
+      .col-md-4{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+      }
+     .cart {
+      text-align: center;
+      margin: 20px;
+      border: 1px solid #ddd;
+      padding: 15px;
+      border-radius: 5px;
+      height: 250px;
+      width: 350px;
+      align-items: center;
+    }
+    h4{
+      letter-spacing: 1px;
+      color: black;
+      text-align: center;
+    }
+    /* .item{
+      height: 200px;
+      width: 200px;
+
+    } */
+    .button{   
+      justify-content: space-evenly;       
+       text-align:center;
+       border-radius: 5px;
+       margin-left: 200px;
+       /* padding: auto; */
+       /* border-radius: 5px;       */
+
+    }
+    footer{
+      height: 100px;
+      /* align-items: first baseline; */
+      margin-top: 50px;
+      background-color: gray;
+      /* margin-bottom: 50px; */
+    }
+        .footer-title {
+            font-weight: bold;
+            flex-wrap: wrap;
+            text-align:left ;
+            /* height: 80px; */
+            margin-bottom: 50px;
+            /* background-color: gray; */
+            
+        }
+        .cop{
+            
+            padding:10px;
+            text-align: center;
+            text-decoration-color: black;
+            background-color: green
+        }
+        section{
+            height: 500px;
+            display: inline-block;
+        }
+
+    </style>
+
+</head>
+<body>
+    <header>
+      <div class="data-portal">data portal</div>
+        <!-- <div>
+            <span class="data portal">data portal</span>
+        </div> -->
+        <!-- <div class="silde container"></div> -->
+    </header>
+    <section>
+<div>
+    <div class="container-1">
+        <br>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+          </ol>
+      
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+      
+            <div class="item active">
+              <img src="image.jpeg" alt="image" width="300" height="300">
+              <!-- <div class="carousel-caption">
+              <p>card slider</p> 
+            </div> -->
+            </div>
+      
+            <div class="item">
+              <img src="map.jpeg" alt="map" width="300" height="300">
+              <!-- <div class="carousel-caption">
+             </div> -->
+            </div>
+          
+            <div class="item">
+              <img src="o.jpeg" alt="sevice image" width="300" height="435">
+              <!-- <div class="carousel-caption">
+             </div> -->
+            </div>
+      
+            <div class="item">
+              <img src="service image.png" alt="image" width="300" height="100px">
+              <!-- <div class="carousel-caption">
+            </div> -->
+            </div> 
+           
+        </div>
+      
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon g8i-lyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+       <div>
+        <!-- cart section  -->
+        <div class="container-2">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="cart">
+                    <img src="map.jpeg" alt="communtity" w="1" h="1">
+                    <span>map portal</span>
+                   </div>
+                   <!-- <h4>map portal</h4> -->
+                <div>
+                    <button class="button">GO</button>
+                </div>
+              </div>
+             
+              <div class="col-md-4">
+                <div class="cart">
+                 <img src="service.jpeg" alt="recordlow" >
+                 <span>office portal</span>                 
+                 </div>
+                 <!-- <h4>office portal</h4> -->
+                <div>
+                    <button class="button">GO</button>
+                </div>
+
+              </div>
+             
+              <div class="col-md-4">
+                <div class="cart">
+                <img src="communtity.jpeg" alt="recordlow">
+                <span>service portal</span>                
+              </div>
+                  <!-- <h4>service portal</h4> -->
+                  <div><button class="button">GO</button>
+                  </div>
+                    
+                  
+             
+            </div>
+           
+        </div>
+          </div>
+</div>
+    </section>
+       
+        <!-- footer section -->
+        <footer>
+          <div class="footer-title">Footer content</div>
+          <div class="cop">copyright</div>
+        </footer>
+        <!-- <footer>
+            <span title="brand-title"> </span>
+           <div class="sh">
+            <div >
+                <div class="footer-title">Footer content</div>                 
+            </div>
+            </footer>
+            <div class="cop">
+            <div class="copyright">copyright
+          </div>
+          </div> -->
+    
+
+</body>
+</html>
